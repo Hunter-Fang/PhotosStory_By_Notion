@@ -29,17 +29,20 @@ Demo地址：[TimeStory-Photos (helloiamazi.work)](https://timeline.helloiamazi.
 
 - PC/MAC WEB端效果
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/575657fa-6632-4040-9308-b2e949706b79/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/2d615e2b-e42e-49a8-8045-36135e47bbbc)
+
 
 - 移动端效果
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/0b890dc5-51bd-4909-b0be-781a3bf00f0e/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/e198ed1b-6d1e-47cd-a9ba-780772c64ef9)
+
 
 # **如何部署**
 
 很简单，可以参考以下流程：
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/e9a31e4b-8def-4b48-b12e-8558641346bb/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/02865365-3c6a-4082-82f7-af582ac1d528)
+
 
 **准备工作：**
 
@@ -47,17 +50,19 @@ Demo地址：[TimeStory-Photos (helloiamazi.work)](https://timeline.helloiamazi.
 
 [TimeLine (notion.site)](https://www.notion.so/e649801ccfa24c59b903148531d60783?pvs=21)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/278a540c-8a0f-43d4-a767-11b7e3e1f5cd/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/33e3f94e-6159-4d73-8690-51ad1b59ece1)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/79a452ee-062f-4b22-9fc3-1bd3c543bc16/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/7ee1155a-9c21-42ea-b927-b1aa5ecd388f)
+
 
 2.创建Notion API（官方称为机器人），获取API Token，并API授权链接上面创建的页面
 
 [My integrations | Notion Developers](https://www.notion.so/my-integrations)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/86e58756-4add-411f-99fd-1ed3e6916805/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/bb7be318-ba7f-4864-8890-d085956eee10)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/f8b90506-00e0-469c-b1e1-dc9920abafff/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/c9fb56af-8cbc-47c2-afd5-3754edc20933)
+
 
 至此，准备工作完成，开始部署
 
@@ -73,7 +78,8 @@ Demo地址：[TimeStory-Photos (helloiamazi.work)](https://timeline.helloiamazi.
 
 点击右上角Fork：
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/6a9bf354-e755-49a2-85e4-29d06902fdfc/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/f3b6b3c0-01d8-4ce9-8a68-bd0b130047a0)
+
 
 3.用GitHub账号登陆vercel：
 
@@ -81,13 +87,15 @@ Demo地址：[TimeStory-Photos (helloiamazi.work)](https://timeline.helloiamazi.
 
 4.vercel平台New Project，选择刚刚Fork到自己仓库里的项目：
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/a4905d49-c72f-4dcd-82f5-d1fd8831e2f3/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/3ec5cdc1-3f5c-4441-ad08-3f5c7acf18fe)
+
 
 5.填入环境变量，将准备工作中获得的两个ID，按下方示意填入
 
 NOTION_DATABASE_ID、NOTION_TOKEN
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/d03f8357-15f4-4a13-ba69-286f6383a67c/c599ff3e-a3cd-4c73-9ed7-3d5dd8e54416/Untitled.png)
+![image](https://github.com/Hunter-Fang/PhotosStory_By_Notion/assets/50197260/2df87df0-3167-4981-84bf-fd3ddcf47b43)
+
 
 6.点击deploy即可，待部署完直接访问
 
