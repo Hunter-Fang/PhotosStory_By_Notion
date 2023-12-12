@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>2023-TimeLine-Photos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <ul class="timeline" id="timeline"></ul>
+
+  <script>
+    // 获取并展示<li>块
+    fetch('/api/main.py')
+      .then(response => response.json())
+      .then(data => {
+        var timeline = document.getElementById('timeline');
+        timeline.innerHTML = ''; // 清空现有的<li>块
+
+        data.results.sort((a, b) => {
+          var dateA = new Date(a.properties.date.date.start);
+          var dateB = new Date(b.properties.date.date.start);
+          return dateB - dateA;
+        });
+
+        data.results.forEach(record => {
+          var li = document.createElement('li');
+          li.className = 'timeline-event';
+
+          var location = record.properties.station.rich_text[0].plain_text;
+          var date = record.properties.date.date.start;
+          var message = record.properties.message.title[0].plain_text;
+          var image = record.properties.image.files[0].file.url;
+
+          var content = `
+            <label class="timeline-event-icon"></label>
+            <div class="timeline-event-copy">
+              <h4 class="timeline-event-thumbnail">${date}</h4>
+              <h3>${location}</h3>
+              <h4>${message}</h4>
+              ${image ? `<img src="${image}">` : ''}
+            </div>
+          `;
+
+          li.innerHTML = content;
+
+          timeline.appendChild(li);
+        });
+      })
+      .catch(error => {
+        console.error('获取数据失败:', error);
+      });
+  </script>
+</body>
+
+</html>
