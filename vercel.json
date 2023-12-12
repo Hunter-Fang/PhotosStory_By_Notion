@@ -12,7 +12,7 @@
     {
         "src": "static/style.css",
         "use": "@vercel/css"
-      },
+      }
     ],
     "routes": [
       {
