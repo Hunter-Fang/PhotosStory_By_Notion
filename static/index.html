@@ -14,6 +14,27 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
 
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: white;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -145,8 +166,13 @@ img {
 </style>
 
 <body>
-  <ul class="timeline" id="timeline"></ul>
+    <section class="intro">
+        <div class="container">
+          <h1>Hunter's Life</h1>
+          <h1>—</h1>
+        </div>
 
+  <ul class="timeline" id="timeline"></ul>
   <script>
     // 获取并展示<li>块
     fetch('/api/main.py')
