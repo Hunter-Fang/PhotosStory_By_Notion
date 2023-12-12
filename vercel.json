@@ -7,18 +7,7 @@
     },
     {
       "src": "static/index.html",
-      "use": "@vercel/static",
-      "headers": [
-        {
-          "source": "**/*.css",
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "text/css"
-            }
-          ]
-        }
-      ]
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -29,6 +18,13 @@
     {
       "src": "/(.*)",
       "dest": "static/index.html"
+    },
+    {
+      "src": "/(.+\\.css)",
+      "headers": {
+        "Content-Type": "text/css"
+      },
+      "continue": true
     }
   ]
 }
