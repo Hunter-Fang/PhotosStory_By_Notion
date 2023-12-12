@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 CORS(app)  # 添加这一行来启用CORS
 
-@app.route('/')
+@app.route('/api/main.py')
 def get_data():
     try:
         headers = {
